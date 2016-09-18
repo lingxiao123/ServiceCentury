@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chanjet.TP.OpenAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,17 @@ namespace ServiceCenturyHX
             InitializeComponent();
         }
 
-        protected override void OnStart(string[] args)
+        public void OnStart()
         {
+            OpenAPI api = new OpenAPI("", new Credentials() {
+                AppKey = "",
+                AppSecret=""
+            });
         }
 
         protected override void OnStop()
         {
+
         }
     }
 }
