@@ -20,7 +20,7 @@ namespace ServiceCenturyHX
         public void OnStart()
         {
             OpenAPI api = new OpenAPI("", new Credentials() {
-                AppKey = "",
+                AppKey = "a",
                 AppSecret=""
             });
         }
